@@ -33,12 +33,12 @@ jobs:
           push: true
           tags: |
             ghcr.io/apocalypsor/ptool:latest
-      - name: Build ptbrush Docker Image
-        uses: docker/build-push-action@v5
-        with:
-          context: ./ptbrush
-          file: ./ptbrush/Dockerfile
-          platforms: linux/amd64, linux/arm64
-          push: true
-          tags: |
-            ghcr.io/apocalypsor/ptbrush:latest
+      # - name: Build ptbrush Docker Image
+      #   uses: docker/build-push-action@v5
+      #   with:
+      #     context: ./ptbrush
+      #     file: ./ptbrush/Dockerfile
+      #     platforms: linux/amd64, linux/arm64
+      #     push: true
+      #     tags: |
+      #       ghcr.io/apocalypsor/ptbrush:latest
